@@ -14,9 +14,11 @@ header {
     border-bottom: 1px solid #333;
     z-index: 1;
     position: relative;
+    display: flex;
+    justify-content: space-between; /* Размещение элементов слева и справа */
+    align-items: center; /* Выравнивание элементов по центру вертикально */
     text-align: center; /* Центрирование текста */
 }
-
 
 .profile {
     display: flex;
@@ -46,19 +48,21 @@ header {
 
 .profile-info {
     width: 100%;
+    text-align: left;
 }
 
 .profile-info h1 {
     font-family: 'Montserrat', sans-serif; /* Пример нового шрифта */
     color: #bb86fc; /* Цвет шрифта для имени */
-    margin: 10px 0 0; /* Внешние отступы */
+    margin: 0; /* Убираем внешние отступы */
     font-size: 2.5em; /* Размер шрифта */
     transition: transform 0.3s; /* Плавность анимации */
-    
 }
+
 .profile-info h1:hover {
     transform: scale(1.1); /* Увеличение при наведении */
 }
+
 .profile-info p {
     color: #b8b8ff; /* Цвет текста */
     margin: 0;
@@ -220,7 +224,6 @@ h1 {
     transform: scale(1.05); /* Scale on hover */
     box-shadow: 0 0 20px rgba(138, 43, 226, 0.6); /* Shadow on hover */
 }
-
 
 /* Адаптация для мобильных устройств */
 @media (min-width: 768px) {
