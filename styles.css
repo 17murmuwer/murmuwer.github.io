@@ -1,0 +1,271 @@
+/* Основные настройки */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    overflow-x: hidden;
+    background-color: #121212; /* Background color suggestion */
+}
+
+header {
+    background-color: rgba(20, 20, 40, 0.8);
+    padding: 20px;
+    border-bottom: 1px solid #333;
+    z-index: 1;
+    position: relative;
+    text-align: center; /* Центрирование текста */
+}
+
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #8a2be2;
+    transition: transform 0.3s ease;
+}
+
+.profile-photo img:hover {
+    transform: scale(1.1); /* Image scale on hover */
+}
+
+.profile-info {
+    width: 100%;
+}
+
+.profile-info h1 {
+    font-family: 'Montserrat', sans-serif; /* Пример нового шрифта */
+    color: #bb86fc; /* Цвет шрифта для имени */
+    margin: 10px 0 0; /* Внешние отступы */
+    font-size: 2.5em; /* Размер шрифта */
+    transition: transform 0.3s; /* Плавность анимации */
+    
+}
+.profile-info h1:hover {
+    transform: scale(1.1); /* Увеличение при наведении */
+}
+.profile-info p {
+    color: #b8b8ff; /* Цвет текста */
+    margin: 0;
+    font-size: 1.2em; /* Размер шрифта */
+    font-style: italic; /* Курсивное начертание */
+}
+
+/* Скиллы */
+.skills {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.skills-header {
+    font-family: 'Futuristic Font', sans-serif;
+    color: #bb86fc; /* Skills header color */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-subheader {
+    font-family: 'Roboto', sans-serif;
+    color: #8a2be2; /* Skills subheader color */
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.skills li {
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 20px;
+    font-size: 1.1em;
+}
+
+.skill-dot {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    background-color: #bb86fc; /* Skills dot color */
+    border-radius: 50%;
+}
+
+.coding-skills, .hacking-skills, .other-skills, .contact-skills {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Социальные ссылки */
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.social-links a {
+    color: #bb86fc; /* Social link color */
+    text-decoration: none;
+    margin: 5px;
+    transition: transform 0.3s, color 0.3s; /* Transition for transform and color */
+    display: flex;
+    align-items: center;
+}
+
+.social-links a:hover {
+    transform: scale(1.1); /* Scale on hover */
+    color: #8a2be2; /* Color change on hover */
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.social-links h3 {
+    color: #ffffff;
+}
+
+/* Основной part */
+main {
+    padding: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff; /* Main heading color */
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background-color: rgba(48, 8, 85, 0.8);
+    border: 1px solid #8a2be2;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.project:hover img,
+.project:hover h2,
+.project:hover p {
+    transform: scale(1.05); /* Scale on hover */
+    transition: transform 0.3s ease;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.project h2 {
+    color: #bb86fc; /* Project title color */
+}
+
+.project p {
+    color: #e1e1e1; /* Project description color */
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #8a2be2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transition for background, transform, and box-shadow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project a:hover {
+    background-color: #7a24d3; /* Background color change on hover */
+    transform: scale(1.05); /* Scale on hover */
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.6); /* Shadow on hover */
+}
+
+
+/* Адаптация для мобильных устройств */
+@media (min-width: 768px) {
+    .profile {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .profile-header {
+        flex-direction: row;
+    }
+
+    .profile-photo img {
+        width: 300px;
+        height: 300px;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .skills-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .social-links {
+        justify-content: flex-start;
+    }
+
+    .projects {
+        grid-template-columns: repeat(3, 1fr); /* Three projects per row */
+    }
+}
+
+/* Параллакс-эффект */
+.parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Cover entire viewport */
+    z-index: -1;
+    background-image: url('images/bg.gif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.5;
+}
