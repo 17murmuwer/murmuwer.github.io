@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,116 +12,55 @@
         <div class="profile">
             <div class="profile-header">
                 <div class="profile-photo">
-                    <img src="images/profile-photo.jpg" alt="Profile Photo" class="profile-image">
+                    <img src="images/profile-photo.jpg" alt="Profile Photo">
                 </div>
                 <div class="profile-info">
-                    <h1 class="translate" data-key="name">Акулич Альберт</h1>
-                    <p class="translate" data-key="profile">Python-Разработчик из России, увлекаюсь этичным взломом</p>
-                    <div class="skills">
-                        <h2 class="skills-header translate" data-key="skills">Навыки</h2>
-                        <div class="skills-container">
-                            <div class="coding-skills">
-                                <h3 class="skills-subheader translate" data-key="coding">Программирование</h3>
-                                <ul>
-                                    <li><span class="skill-dot"></span>Python</li>
-                                    <li><span class="skill-dot"></span>Django</li>
-                                    <li><span class="skill-dot"></span>HTML/CSS</li>
-                                    <li><span class="skill-dot"></span>Aiogram (Telegram bots)</li>
-                                    <li><span class="skill-dot"></span>SQL Databases: MySQL, sqlite3</li>
-                                    <li><span class="skill-dot"></span>GIT</li>
-                                    <li><span class="skill-dot"></span>Kivy/Tkinter (Gui Apps)</li>
-                                </ul>
-                            </div>
-                            <div class="hacking-skills">
-                                <h3 class="skills-subheader translate" data-key="hacking">Этичный взлом</h3>
-                                <ul>
-                                    <li><span class="skill-dot"></span>OSINT</li>
-                                    <li><span class="skill-dot"></span>Social Engineering & Phishing</li>
-                                    <li><span class="skill-dot"></span>Nmap/Nessus/Acuentix</li>
-                                    <li><span class="skill-dot"></span>Metasploitable</li>
-                                    <li><span class="skill-dot"></span>Wifite/AirCrack/hashcat & Wireshark</li>
-                                </ul>
-                            </div>
-                            <div class="other-skills">
-                                <h3 class="skills-subheader translate" data-key="other_skills">Другие навыки</h3>
-                                <ul>
-                                    <li><span class="skill-dot"></span>Linux</li>
-                                    <li><span class="skill-dot"></span>English (fluent)</li>
-                                    <li><span class="skill-dot"></span>Russian (native)</li>
-                                    <li><span class="skill-dot"></span>German (basics)</li>
-                                    <li><span class="skill-dot"></span>Graphical Design (Krita, Photoshop)</li>
-                                </ul>
-                            </div>
-                            <div class="contact-skills">
-                                <h3 class="skills-header translate" data-key="contact">Мои контакты:</h3>
-                                <div class="social-links">
-                                    <a href="https://github.com/17murmuwer" target="_blank">
-                                        <img src="images/github.png" alt="GitHub">
-                                        <span>GitHub</span>
-                                    </a>
-                                    <a href="https://t.me/marginalDeveloper" target="_blank">
-                                        <img src="images/telegram.png" alt="Telegram">
-                                        <span>Telegram</span>
-                                    </a>
-                                    <a href="https://www.instagram.com/murmuwer" target="_blank">
-                                        <img src="images/instagram.png" alt="Instagram">
-                                        <span>Instagram</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <h1>Akulich Albert</h1>
+                    <p>17 y.o. Python developer</p>
                 </div>
             </div>
-        </div>
-        <!-- visit icon + amount of views -->
-        <div class="visit-counter">
-            <img src="images/views.png" alt="Views Icon" id="views-icon">
-            <span id="visit-count">0</span>
-        </div>
-        <!-- кнопка для смены языка -->
-        <div class="language-switcher">
-            <button id="language-btn">
-                <img src="images/flag-ru.png" alt="RU" class="language-icon" id="current-lang-icon">
-            </button>
-            <div id="language-menu" class="language-menu">
-                <div class="language-option" data-lang="ru">
-                    <img src="images/flag-ru.png" alt="RU" class="language-icon">
-                    <span>RU</span>
-                </div>
-                <div class="language-option" data-lang="en">
-                    <img src="images/flag-en.png" alt="EN" class="language-icon">
-                    <span>EN</span>
-                </div>
+            <div class="social-links">
+                <a href="https://github.com/17murmuwer" target="_blank">
+                    <img src="images/github.png" alt="GitHub">
+                    <span>GitHub</span>
+                </a>
+                <a href="https://t.me/murmuwer" target="_blank">
+                    <img src="images/telegram.png" alt="Telegram">
+                    <span>Telegram</span>
+                </a>
+                <a href="https://www.instagram.com/murmuwer" target="_blank">
+                    <img src="images/instagram.png" alt="Instagram">
+                    <span>Instagram</span>
+                </a>
             </div>
         </div>
     </header>
     <main>
-        <h1 class="translate" data-key="my_projects">Мои проекты:</h1>
+        <h1>My projects:</h1>
         <div class="projects">
             <div class="project">
-                <h2 class="translate" data-key="telegram_tool">Инструмент удаленного управления Telegram</h2>
+                <h2>Telegram Remote Control tool</h2>
                 <img src="images/remote-control-tool.jpg" alt="Telegram Remote Control tool">
-                <p class="translate" data-key="telegram_tool_desc">Этот проект - это Telegram-бот для удаленного управления компьютером. Пользователи могут запускать приложения, управлять файлами и контролировать состояние системы через мессенджер, обеспечивая безопасное соединение и удобство использования.</p>
-                <a href="https://github.com/17murmuwer/TgRemoteControl" target="_blank" class="translate" data-key="learn_more">Узнать больше</a>
+                <p>This project is a Telegram bot for remote computer management. Users can launch applications, manage files, and monitor system status through the messenger, providing a secure connection and ease of use.</p>
+                <a href="https://github.com/17murmuwer/TgRemoteControl" target="_blank">Learn More</a>
             </div>
             <div class="project">
-                <h2 class="translate" data-key="murmuwer_tools">Инструменты Murmuwer</h2>
+                <h2>Murmuwer Tools</h2>
                 <img src="images/murmuwer-tools.jpg" alt="Murmuwer Tools">
-                <p class="translate" data-key="murmuwer_tools_desc">Комбинирует функциональность моих собственных инструментов с другими популярными программами, предоставляя широкий спектр возможностей для открытой разведки.</p>
-                <a href="https://github.com/17murmuwer/MurOsint-Tools" target="_blank" class="translate" data-key="learn_more">Узнать больше</a>
+                <p>Combines the functionality of my own tools with other popular programs, providing a wide range of capabilities for open-source intelligence gathering.</p>
+                <a href="https://github.com/17murmuwer/MurOsint-Tools" target="_blank">Learn More</a>
             </div>
             <div class="project">
-                <h2 class="translate" data-key="leaks_bot">Бот для утечек и разведки Telegram</h2>
+                <h2>Leaks&Osint Telegram bot</h2>
                 <img src="images/leaks-osint-bot.jpg" alt="Leaks&Osint Telegram bot">
-                <p class="translate" data-key="leaks_bot_desc">Этот проект - это Telegram-бот, который позволяет пользователям искать текст в файлах и получать информацию о номерах телефонов и пользователях социальных сетей. Бот разработан с использованием библиотеки aiogram для асинхронного взаимодействия с API Telegram. Он также включает функции работы с файлами и веб-запросами.</p>
-                <a href="https://github.com/17murmuwer/MurmuwerLeaksBot" target="_blank" class="translate" data-key="learn_more">Узнать больше</a>
+                <p>This project is a Telegram bot that allows users to search for text in files and obtain information about phone numbers and social media users. The bot is developed using the aiogram library for asynchronous interaction with the Telegram API. It also includes features for working with files and web requests.</p>
+                <a href="https://github.com/17murmuwer/MurmuwerLeaksBot" target="_blank">Learn More</a>
             </div>
             <div class="project">
-                <h2 class="translate" data-key="luckyjet_bot">Бот LuckyJet Casino</h2>
+                <h2>LuckyJet Casino Bot</h2>
                 <img src="images/luckyjet-casino-bot.jpg" alt="LuckyJet Casino Bot">
-                <p class="translate" data-key="luckyjet_bot_desc">LuckyJet - ваш личный гид по миру азартных игр и удачи! Созданный по заказу для казино, этот уникальный бот предназначен для того, чтобы предложить пользователям захватывающий опыт и шанс на большой выигрыш. Оснащенный специальной кодовой фразой, LuckyJet мгновенно превращает ваше виртуальное путешествие в захватывающий полет удачи.</p>
-                <a href="https://github.com/17murmuwer/luckyJet" target="_blank" class="translate" data-key="learn_more">Узнать больше</a>
+                <p>LuckyJet - your personal guide to the world of gambling and luck! Created on demand for casinos, this unique bot is designed to offer users an exciting experience and a chance at a big win. Equipped with a special passphrase, LuckyJet instantly transforms your virtual journey into an exhilarating flight of luck.</p>
+                <a href="https://github.com/17murmuwer/luckyJet" target="_blank">Learn More</a>
             </div>
         </div>
     </main>
