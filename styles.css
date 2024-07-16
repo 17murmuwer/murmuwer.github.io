@@ -43,7 +43,7 @@ header {
 }
 
 .profile-photo img:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1); /* Image scale on hover */
 }
 
 .profile-info {
@@ -67,7 +67,7 @@ header {
     color: #b8b8ff; /* Цвет текста */
     margin: 0;
     font-size: 1.2em; /* Размер шрифта */
-    font-style: italic; 
+    font-style: italic; /* Курсивное начертание */
 }
 
 /* Скиллы */
@@ -78,7 +78,7 @@ header {
 
 .skills-header {
     font-family: 'Futuristic Font', sans-serif;
-    color: #bb86fc; 
+    color: #bb86fc; /* Skills header color */
     font-size: 1.5em;
     margin-bottom: 10px;
 }
@@ -116,7 +116,7 @@ header {
     top: 4px;
     width: 10px;
     height: 10px;
-    background-color: #bb86fc; 
+    background-color: #bb86fc; /* Skills dot color */
     border-radius: 50%;
 }
 
@@ -134,17 +134,17 @@ header {
 }
 
 .social-links a {
-    color: #bb86fc; 
+    color: #bb86fc; /* Social link color */
     text-decoration: none;
     margin: 5px;
-    transition: transform 0.3s, color 0.3s; 
+    transition: transform 0.3s, color 0.3s; /* Transition for transform and color */
     display: flex;
     align-items: center;
 }
 
 .social-links a:hover {
-    transform: scale(1.1); 
-    color: #8a2be2; 
+    transform: scale(1.1); /* Scale on hover */
+    color: #8a2be2; /* Color change on hover */
 }
 
 .social-links img {
@@ -167,7 +167,7 @@ main {
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: #ffffff; 
+    color: #ffffff; /* Main heading color */
 }
 
 .projects {
@@ -187,7 +187,7 @@ h1 {
 .project:hover img,
 .project:hover h2,
 .project:hover p {
-    transform: scale(1.05); 
+    transform: scale(1.05); /* Scale on hover */
     transition: transform 0.3s ease;
 }
 
@@ -198,11 +198,11 @@ h1 {
 }
 
 .project h2 {
-    color: #bb86fc; 
+    color: #bb86fc; /* Project title color */
 }
 
 .project p {
-    color: #e1e1e1; 
+    color: #e1e1e1; /* Project description color */
 }
 
 .project a {
@@ -213,16 +213,16 @@ h1 {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; 
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transition for background, transform, and box-shadow */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .project a:hover {
-    background-color: #7a24d3; 
-    transform: scale(1.05); 
-    box-shadow: 0 0 20px rgba(138, 43, 226, 0.6); 
+    background-color: #7a24d3; /* Background color change on hover */
+    transform: scale(1.05); /* Scale on hover */
+    box-shadow: 0 0 20px rgba(138, 43, 226, 0.6); /* Shadow on hover */
 }
 
 /* Адаптация для мобильных устройств */
@@ -254,107 +254,21 @@ h1 {
     }
 
     .projects {
-        grid-template-columns: repeat(3, 1fr); /* разделение на три */
+        grid-template-columns: repeat(3, 1fr); /* Three projects per row */
     }
 }
 
-/* Параллакс эффект */
+/* Параллакс-эффект */
 .parallax-bg {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* !!!! ЧТОБЫ ПОКРЫВАЛО ВСЕ */
+    height: 100%; /* Cover entire viewport */
     z-index: -1;
     background-image: url('images/bg.gif');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     opacity: 0.5;
-}
-.visit-counter {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    display: flex;
-    align-items: center;
-    color: #bb86fc; 
-}
-
-.visit-counter img {
-    width: 50px; 
-    height: 50px;
-    margin-right: 8px;
-}
-.language-switcher {
-    position: absolute;
-    top: 10px;
-    right: 80px; /* Левее */
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    transition: transform 0.3s ease; /* Плавная анимация */
-}
-
-.language-switcher.open {
-    transform: translateX(0); /* Сдвиг вправо при открытии */
-}
-
-.language-switcher.closed {
-    transform: translateX(100%); /* Сдвиг за пределы экрана при закрытии */
-}
-
-#language-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.language-icon {
-    width: 24px;
-    height: 24px;
-}
-
-.language-menu {
-    display: none;
-    position: absolute;
-    top: 30px;
-    right: 0;
-    background: rgba(245, 242, 242, 0.212);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.language-option {
-    padding: 10px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-.language-option:hover {
-    background: rgba(55, 0, 255, 0.05);
-}
-
-#language-menu.show {
-    display: block;
-}
-
-.visit-counter {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-
-#views-icon {
-    width: 24px;
-    height: 24px;
-}
-
-#visit-count {
-    font-size: 16px;
 }
