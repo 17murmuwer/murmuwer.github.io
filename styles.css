@@ -1,4 +1,4 @@
-/* main settings */
+/* Основные настройки */
 body {
     margin: 0;
     padding: 0;
@@ -15,9 +15,9 @@ header {
     z-index: 1;
     position: relative;
     display: flex;
-    justify-content: space-between; /* left +right */
-    align-items: center; /* выравнивание*/
-    text-align: center; /* центр */
+    justify-content: space-between; /* Размещение элементов слева и справа */
+    align-items: center; /* Выравнивание элементов по центру вертикально */
+    text-align: center; /* Центрирование текста */
 }
 
 .profile {
